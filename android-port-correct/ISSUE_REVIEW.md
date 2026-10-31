@@ -32,3 +32,6 @@ The effective package contains 19,481 files: 16,290 Graphics, 2,108 Audio, 1,006
 The 81 excluded source files comprise 17 authoring/archive/log/sidecar files within runtime folders, plus 64 Windows executables/libraries, editor/project tools, backups, historical logs or exported SavedMaps outside runtime folders. Full paths and reasons are retained in asset-audit.json.
 
 This establishes completeness relative to the supplied source. It does not prove that every reference in the original game resolves, every original asset is valid, or every mechanic works on Android. A full playthrough and physical-device tests remain necessary.
+
+## Grass exit confirmed and corrected
+Bounded exit trace ends at 101_PItem_PokeRadar.rb:189, a nonlocal return in EncounterModifier's registered proc. Corrected the roaming and radar encounter callbacks to local next, and radar event guards likewise; the shiny-grass loop uses break. Reproduced northward exit before correction and repeated the route plus additional grass movement successfully after both patches. Normal preload restored. Broader callback audit remains outstanding.

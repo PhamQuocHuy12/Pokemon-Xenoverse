@@ -188,11 +188,11 @@ end
 EncounterModifier.register(proc {|encounter|
   $PokemonTemp.nowRoaming=false
   $PokemonTemp.roamerIndex=nil
-  return nil if !encounter
-  return encounter if $PokemonGlobal.roamedAlready
-  return encounter if $PokemonGlobal.partner
-  return encounter if $PokemonTemp.pokeradar
-  return encounter if rand(4)!=0
+  next nil if !encounter
+  next encounter if $PokemonGlobal.roamedAlready
+  next encounter if $PokemonGlobal.partner
+  next encounter if $PokemonTemp.pokeradar
+  next encounter if rand(4)!=0
   roam=[]
   for i in 0...RoamingSpecies.length
     poke=RoamingSpecies[i]
@@ -226,9 +226,9 @@ EncounterModifier.register(proc {|encounter|
     if roamEncounter[3] && roamEncounter[3]!=""
       $PokemonGlobal.nextBattleBGM=roamEncounter[3]
     end
-    return [roamEncounter[1],roamEncounter[2]]
+    next [roamEncounter[1],roamEncounter[2]]
   end
-  return encounter
+  next encounter
 })
 
 EncounterModifier.registerEncounterEnd(proc {
