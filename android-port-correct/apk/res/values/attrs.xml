@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bgDrawable" format="reference" />
+    <attr name="fgDrawable" format="reference" />
+    <attr name="text" format="string" />
+</resources>

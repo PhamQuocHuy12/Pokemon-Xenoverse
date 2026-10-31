@@ -1,0 +1,1 @@
+{"rgssVersion": 1, "fullscreen": true, "fixedAspectRatio": true, "defScreenW": 512, "defScreenH": 384, "vsync": false, "fixedFramerate": 0, "preloadScript": ["android155.rb"], "pathCache": true, "customScript": "speed_measure.rb"}

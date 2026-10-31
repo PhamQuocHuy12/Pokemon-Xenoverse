@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <id name="button_A" />
+    <id name="button_ALT" />
+    <id name="button_B" />
+    <id name="button_C" />
+    <id name="button_CTRL" />
+    <id name="button_L" />
+    <id name="button_R" />
+    <id name="button_SHIFT" />
+    <id name="button_X" />
+    <id name="button_Y" />
+    <id name="button_Z" />
+    <id name="buttons_action_layout" />
+    <id name="buttons_action_row_1" />
+    <id name="buttons_action_row_2" />
+    <id name="buttons_misc_left_layout" />
+    <id name="buttons_misc_left_row" />
+    <id name="buttons_misc_right_layout" />
+    <id name="buttons_misc_right_row" />
+    <id name="buttons_mod_layout" />
+    <id name="buttons_mod_row" />
+    <id name="dpad" />
+    <id name="gamepad_layout" />
+    <id name="give_us_a_review_landmine_button" />
+    <id name="give_us_a_review_landmine_main_layout" />
+    <id name="give_us_a_review_landmine_text_1" />
+    <id name="give_us_a_review_landmine_text_2" />
+</resources>

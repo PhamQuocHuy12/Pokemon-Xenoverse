@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:installLocation="auto" package="com.hatkid.mkxpz" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-feature android:name="android.hardware.gamepad" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.type.pc" android:required="false"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <application android:debuggable="true" android:allowBackup="true" android:appCategory="game" android:banner="@mipmap/ic_banner" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:isGame="true" android:label="Xenoverse" android:largeHeap="true" android:requestLegacyExternalStorage="true" android:theme="@style/AppTheme">
+        <activity android:alwaysRetainTaskState="true" android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection" android:exported="true" android:label="Xenoverse" android:launchMode="singleTask" android:name="com.hatkid.mkxpz.MainActivity" android:preferMinimalPostProcessing="true" android:resizeableActivity="true" android:screenOrientation="sensorLandscape">
+            
+            <meta-data android:name="mkxp_debug" android:value="false"/>
+            <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
+            <meta-data android:name="com.samsung.android.multidisplay.keep_process_alive" android:value="true"/>
+        </activity>
+        <activity-alias android:exported="true" android:label="mkxp-z (Debug)" android:name="com.hatkid.mkxpz.MainDebugActivity" android:targetActivity="com.hatkid.mkxpz.MainActivity">
+            <meta-data android:name="mkxp_debug" android:value="true"/>
+        </activity-alias>
+    <activity android:name="com.hatkid.mkxpz.SetupActivity" android:exported="true" android:screenOrientation="sensorLandscape"><intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter></activity></application>
+</manifest>
